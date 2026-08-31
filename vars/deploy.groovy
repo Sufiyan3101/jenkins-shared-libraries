@@ -1,5 +1,7 @@
-sh '''
-  docker compose down
-  docker compose up -d
-'''
-echo "Deployed Successfully..."
+def call(){
+  sh '''
+    docker compose down
+    docker compose up -d
+  '''
+  echo "Deployed Successfully..."
+}
