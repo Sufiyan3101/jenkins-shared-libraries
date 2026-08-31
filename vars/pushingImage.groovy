@@ -1,4 +1,4 @@
-def call(String: imageName, String: imageTag, String: dockerHubUser){
+def call(String imageName, String imageTag, String dockerHubUser){
   echo  "Image pushing has been started..."
   withCredentials([usernamePassword(
     'credentialsId': "notes_app_docker_hub",
