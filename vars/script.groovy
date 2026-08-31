@@ -1,5 +1,3 @@
-sh '''
-  docker compose down
-  docker compose up -d
-'''
-echo "Deployed Successfully..."
+echo "This is testing the code..."
+sh "docker compose config"
+echo "Docker Compose configuration is valid..."
