@@ -3,7 +3,7 @@ def call(String imageName, String imageTag) {
     echo "Pushing ${imageName}:${imageTag}..."
 
     withCredentials([usernamePassword(
-        credentialsId: 'notes_app_docker_hub',
+        credentialsId: 'annexture-credentials',
         passwordVariable: 'dockerHubPass',
         usernameVariable: 'dockerHubUser'
     )]) {
